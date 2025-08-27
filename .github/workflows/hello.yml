@@ -1,0 +1,13 @@
+name: First Workflow
+
+on: [push]   # Run workflow on every push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest   # Use GitHub's Ubuntu runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "Hello Striker 🚀, GitHub Actions is working!"
