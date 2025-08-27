@@ -1,0 +1,19 @@
+name: Echo Messages Workflow
+
+on: [push]
+
+jobs:
+  simple-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "Hello Striker 🚀"
+
+      - name: Say DevOps
+        run: echo "You are learning GitHub Actions ⚡"
+
+      - name: Say Goodbye
+        run: echo "Workflow finished ✅"
